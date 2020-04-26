@@ -75,6 +75,9 @@ namespace NormalSmoother
                         v.Normal = new V3(x, y, z);
                     }
                 }
+
+                Utility.Update(args.Host.Connector, pmx, PEPlugin.Pmx.PmxUpdateObject.Vertex);
+                MessageBox.Show("完了");
             }
             catch (Exception ex)
             {
